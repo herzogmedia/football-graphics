@@ -21,6 +21,10 @@
 # Use Control
 http://localhost:3000 (or the IP of the machine you have the controls running on)
 
+# Data Storage
+- Data is stored in /graphics-control/data/db.json
+- Preset-Data is stored /graphics-control/server/data/ltPresets.js
+
 # Operation
 
 ## Control
