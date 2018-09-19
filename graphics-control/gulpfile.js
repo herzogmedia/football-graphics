@@ -23,7 +23,7 @@ gulp.task('env:prod', function() {
 gulp.task('nodemon', function() {
     return plugins.nodemon({
         script: 'index.js',
-        nodeArgs: ['--debug'],
+        nodeArgs: ['--inspect'],
         ext: 'js,html',
         watch: watchLocations.server
     });
