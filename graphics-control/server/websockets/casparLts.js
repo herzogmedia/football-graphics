@@ -31,7 +31,7 @@ module.exports = function (socket) {
     socket.listen(namespace, "penalty", function (data) {
         var msgData = {
             "text2":data.teamData.name,
-            "text1":"Penalty",
+            "text1":"Strafstoß",
             "colour1": data.teamData.colour
         };
         socket.broadcast(namespace, "genericTeam", msgData);
@@ -41,7 +41,7 @@ module.exports = function (socket) {
     socket.listen(namespace, "corner", function (data) {
         var msgData = {
             "text2":data.teamData.name,
-            "text1":"Corner",
+            "text1":"Ecke",
             "colour1": data.teamData.colour
         };
         socket.broadcast(namespace, "genericTeam", msgData);
