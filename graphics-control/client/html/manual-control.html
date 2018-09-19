@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Football Varsity Graphics Control</title>
+    <title>Fußball CG-Steuerung</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,13 +23,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">XTV Football</a>
+            <a class="navbar-brand" href="#">naheTV Fußball</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
-                <li class="active"><a href="/manual-control">Manual Controls</a></li>
-                <li><a href="/settings">Settings</a></li>
+                <li class="active"><a href="/manual-control">Manuelle Steuerung</a></li>
+                <li><a href="/settings">Einstellungen</a></li>
             </ul>
         </div>
         <!--/.nav-collapse -->
@@ -40,18 +40,18 @@
 <div class="container" style="padding-top: 16px;">
     <div class="row">
         <div class="panel panel-default" ng-controller="ClockController">
-            <div class="panel-heading">Clock Control</div>
+            <div class="panel-heading">Zeit</div>
             <div class="panel-body">
                 <div class="row" style="margin: 8px;">
                     <div class="col-xs-12">
-                        <button type="button" class="btn btn-success" ng-click="showClock()">Show Clock</button>
-                        <button type="button" class="btn btn-danger" ng-click="hideClock()">Hide Clock</button>
+                        <button type="button" class="btn btn-success" ng-click="showClock()">Zeit anzeigen</button>
+                        <button type="button" class="btn btn-danger" ng-click="hideClock()">Zeit ausblenden</button>
                         <span>&nbsp - &nbsp</span>
-                        <button type="button" class="btn btn-success" ng-click="startClock()">Start Clock</button>
-                        <button type="button" class="btn btn-warning" ng-click="resetClock()">Reset Clock</button>
-                        <button type="button" class="btn btn-danger" ng-click="stopClock()">Stop Clock</button>
+                        <button type="button" class="btn btn-success" ng-click="startClock()">Timer starten</button>
+                        <button type="button" class="btn btn-warning" ng-click="resetClock()">Timer zurücksetzen</button>
+                        <button type="button" class="btn btn-danger" ng-click="stopClock()">Timer stoppen</button>
                         <span>&nbsp - &nbsp</span>
-                        <span style="font-weight: bold;">CLK: {{clockTimeString}} - EXT: {{extraTimeClockString}} (+{{extraTime}})</span>
+                        <span style="font-weight: bold;">Uhr: {{clockTimeString}} - Ext: {{extraTimeClockString}} (+{{extraTime}})</span>
                     </div>
                 </div>
                 <div class="row" style="margin: 8px;">
@@ -68,14 +68,13 @@
                             <div class="input-group">
                                 <input type="number" class="form-control" placeholder="0" ng-model="newExtraTime">
                             <span class="input-group-btn">
-                                <button class="btn btn-primary" type="button" ng-click="addExtraTime()">Add Stoppage Time
+                                <button class="btn btn-primary" type="button" ng-click="addExtraTime()">Nachspielzeit hinzufügen
                                 </button>
                             </span>
                             </div>
                         </div>
                         <div class="col-xs-4">
-                            <button class="btn btn-danger" type="button" ng-click="removeExtraTime()">Remove Stoppage
-                                Time
+                            <button class="btn btn-danger" type="button" ng-click="removeExtraTime()">Nachspielzeit abziehen
                             </button>
                         </div>
                     </div>
@@ -87,7 +86,7 @@
 
     <div class="row">
         <div class="panel panel-default" ng-controller="ScoreController">
-            <div class="panel-heading">Score Control</div>
+            <div class="panel-heading">Spielstand</div>
             <div class="panel-body">
                 <div class="btn-group padding-15" role="group">
                     <button type="button" class="btn btn-default" ng-click="adjustScore('home', 'up')">
@@ -104,8 +103,8 @@
                     </button>
                 </div>
                 <div class="btn-group padding-15" role="group">
-                    <button type="button" class="btn btn-success" ng-click="showScoreLt()">Show Score LT</button>
-                    <button type="button" class="btn btn-danger" ng-click="hideScoreLt()">Hide Score LT</button>
+                    <button type="button" class="btn btn-success" ng-click="showScoreLt()">Spielstand BB anzeigen</button>
+                    <button type="button" class="btn btn-danger" ng-click="hideScoreLt()">Spielstand BB ausblenden</button>
                 </div>
             </div>
         </div>
@@ -113,8 +112,8 @@
 
     <div class="row">
         <div class="panel panel-default" ng-controller="LtController">
-            <div class="panel-heading">Lower Thirds Control
-                <button type="button" class="btn btn-warning btn-xs" style="float: right;" ng-click="clear()">Clear LTs
+            <div class="panel-heading">Bauchbinden (BB)
+                <button type="button" class="btn btn-warning btn-xs" style="float: right;" ng-click="clear()">Clear BBs
                 </button>
             </div>
             <div class="panel-body">
@@ -125,11 +124,11 @@
                             <input type="text" class="form-control" placeholder="Name" ng-model="ltName">
                         </div>
                         <div class="form-group">
-                            <label>Description</label>
+                            <label>Beschreibung</label>
                             <input type="text" class="form-control" placeholder="Description" ng-model="ltDescription">
                         </div>
                         <button type="button" class="btn btn-default" ng-click="showLowerThird(ltName, ltDescription)">
-                            Show LT
+                            BB anzeigen
                         </button>
                     </form>
                 </div>
@@ -138,7 +137,7 @@
                         <thead>
                             <tr>
                                 <th>Name</th>
-                                <th>Description</th>
+                                <th>Beschreibung</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -147,7 +146,7 @@
                                 <td>{{preset.name}}</td>
                                 <td>{{preset.description}}</td>
                                 <td><button type="button" class="btn btn-default btn-xs" ng-click="showLowerThird(preset.name, preset.description)">
-                                    Show Preset
+                                    Preset anzeigen
                                 </button></td>
                             </tr>
                         </tbody>

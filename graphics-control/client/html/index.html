@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Football Varsity Graphics Control</title>
+    <title>Fußball CG-Steuerung</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,13 +23,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">XTV Football</a>
+            <a class="navbar-brand" href="#">naheTV Fußball</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Home</a></li>
-                <li><a href="/manual-control">Manual Controls</a></li>
-                <li><a href="/settings">Settings</a></li>
+                <li><a href="/manual-control">Manuelle Steuerung</a></li>
+                <li><a href="/settings">Einstellungen</a></li>
             </ul>
         </div>
     </div>
@@ -41,12 +41,12 @@
             <div class="h1 team">{{data.home.name}} - {{scoreData.home.score}}</div>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Team Control</h3>
+                    <h3 class="panel-title">Team-Steuerung</h3>
                 </div>
                 <div class="btn-group padding-15" role="group">
-                    <button type="button" class="btn btn-default" ng-click="teamPenaltyAction('home', 'corner')">Corner
+                    <button type="button" class="btn btn-default" ng-click="teamPenaltyAction('home', 'corner')">Ecke
                     </button>
-                    <button type="button" class="btn btn-default" ng-click="teamPenaltyAction('home', 'penalty')">Penalty
+                    <button type="button" class="btn btn-default" ng-click="teamPenaltyAction('home', 'penalty')">Strafstoß
                     </button>
                 </div>
             </div>
@@ -54,9 +54,9 @@
 
             <div class="panel panel-default player-list">
                 <div class="panel-heading">
-                    <button type="button" class="btn btn-warning btn-xs" style="float: right;" ng-click="clear()">Clear LTs
+                    <button type="button" class="btn btn-warning btn-xs" style="float: right;" ng-click="clear()">Clear BBs
                     </button>
-                    <h3 class="panel-title">Active Players</h3>
+                    <h3 class="panel-title">Aktive Spieler</h3>
                 </div>
                 <div class="panel-body players">
                     <div class="player-control">
@@ -71,19 +71,19 @@
                                 <div class="panel-body player-name">
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn btn-default"
-                                                ng-click="showGenericLtPlayer('home', player.number)">LT
+                                                ng-click="showGenericLtPlayer('home', player.number)">BB
                                         </button>
                                         <button type="button" class="btn btn-primary"
-                                                ng-click="open('home', player.number)">Sub
+                                                ng-click="open('home', player.number)">Ausw.
                                         </button>
                                         <button type="button" class="btn btn-warning"
-                                                ng-click="playerGotCard('home', player.number, 'yellow')">Yellow
+                                                ng-click="playerGotCard('home', player.number, 'yellow')">Gelb
                                         </button>
                                         <button type="button" class="btn btn-danger"
-                                                ng-click="playerGotCard('home', player.number, 'red')">Red
+                                                ng-click="playerGotCard('home', player.number, 'red')">Rot
                                         </button>
                                         <button type="button" class="btn btn-success"
-                                                ng-click="playerScored('home', player.number)">Goal
+                                                ng-click="playerScored('home', player.number)">Tor
                                         </button>
                                         <button type="button" class="btn btn-default"
                                                 ng-click="setPlayerIsPlaying('home', player.number, false)">X
@@ -100,7 +100,7 @@
             </div>
             <div class="panel panel-default player-list">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Inactive Players</h3>
+                    <h3 class="panel-title">Auswechselspieler</h3>
                 </div>
                 <div class="panel-body players">
                     <div class="player-control">
@@ -133,12 +133,12 @@
             <div class="h1 team">{{data.guest.name}} - {{scoreData.guest.score}}</div>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Team Control</h3>
+                    <h3 class="panel-title">Team-Steuerung</h3>
                 </div>
                 <div class="btn-group padding-15" role="group">
-                    <button type="button" class="btn btn-default" ng-click="teamPenaltyAction('guest', 'corner')">Corner
+                    <button type="button" class="btn btn-default" ng-click="teamPenaltyAction('guest', 'corner')">Ecke
                     </button>
-                    <button type="button" class="btn btn-default" ng-click="teamPenaltyAction('guest', 'penalty')">Penalty
+                    <button type="button" class="btn btn-default" ng-click="teamPenaltyAction('guest', 'penalty')">Strafstoß
                     </button>
                 </div>
             </div>
@@ -146,9 +146,9 @@
 
             <div class="panel panel-default player-list">
                 <div class="panel-heading">
-                    <button type="button" class="btn btn-warning btn-xs" style="float: right;" ng-click="clear()">Clear LTs
+                    <button type="button" class="btn btn-warning btn-xs" style="float: right;" ng-click="clear()">Clear BBs
                     </button>
-                    <h3 class="panel-title">Active Players</h3>
+                    <h3 class="panel-title">Aktive Spieler</h3>
                 </div>
                 <div class="panel-body players">
                     <div class="player-control">
@@ -163,19 +163,19 @@
                                 <div class="panel-body player-name">
                                     <div class="btn-group" role="group">
                                         <button type="button" class="btn btn-default"
-                                                ng-click="showGenericLtPlayer('guest', player.number)">LT
+                                                ng-click="showGenericLtPlayer('guest', player.number)">BB
                                         </button>
                                         <button type="button" class="btn btn-primary"
-                                                ng-click="open('guest', player.number)">Sub
+                                                ng-click="open('guest', player.number)">Ausw.
                                         </button>
                                         <button type="button" class="btn btn-warning"
-                                                ng-click="playerGotCard('guest', player.number, 'yellow')">Yellow
+                                                ng-click="playerGotCard('guest', player.number, 'yellow')">Gelb
                                         </button>
                                         <button type="button" class="btn btn-danger"
-                                                ng-click="playerGotCard('guest', player.number, 'red')">Red
+                                                ng-click="playerGotCard('guest', player.number, 'red')">Rot
                                         </button>
                                         <button type="button" class="btn btn-success"
-                                                ng-click="playerScored('guest', player.number)">Goal
+                                                ng-click="playerScored('guest', player.number)">Tor
                                         </button>
                                         <button type="button" class="btn btn-default"
                                                 ng-click="setPlayerIsPlaying('guest', player.number, false)">X
@@ -191,7 +191,7 @@
             </div>
             <div class="panel panel-default player-list">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Inactive Players</h3>
+                    <h3 class="panel-title">Auswechselspieler</h3>
                 </div>
                 <div class="panel-body players">
                     <div class="player-control">
@@ -225,7 +225,7 @@
 <!-- Substitute Modal-->
 <script type="text/ng-template" id="substituteModal">
     <div class="modal-header">
-        <h3 class="modal-title">Substitute for...</h3>
+        <h3 class="modal-title">Auswelchseln für...</h3>
     </div>
     <div class="modal-body">
         <ul>
@@ -233,7 +233,7 @@
                 <a href="#" ng-click="$event.preventDefault(); selected.player = player">{{ player.name }}</a>
             </li>
         </ul>
-        Selected: {{ selected.player.number }} <b>{{ selected.player.name }}</b>
+        Ausgewählt: {{ selected.player.number }} <b>{{ selected.player.name }}</b>
     </div>
     <div class="modal-footer">
         <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
