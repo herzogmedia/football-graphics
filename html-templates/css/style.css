@@ -113,7 +113,8 @@ body {
     right: 52%;
     text-transform: uppercase;
     font-weight: bold;
-    top: 15px;
+    top: 40px;
+	font-size: 35px;
 }
 
 .awayTeam{
@@ -123,7 +124,8 @@ body {
     left: 52%;
     text-transform: uppercase;
     font-weight: bold;
-    top: 15px;
+    top: 40px;
+	font-size: 35px;
 }
 
 .divider {
@@ -264,7 +266,7 @@ body {
 }
 
 #logo {
-    background: #784a5b url("../xtv.svg") no-repeat 15px 5px;
+    background: #784a5b url("../nahetv.svg") no-repeat 15px 5px;
     background-size: 60px 60px;
     position: absolute;
     top: 70px;
