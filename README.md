@@ -1,10 +1,9 @@
 # XTV Football Graphics
 
 ## Prerequisites
- - Node.js (tested with version 4)
- - CasparCG Server (tested with 2.0.7)
- - CasparCG Client to load the templates (tested with 2.0.7)
- - Tested with a Blackmagic Decklink HD Extreme 3D+  for SDI Key & Fill Out
+ - Node.js (tested with 8 LTS)
+ - CasparCG Server (tested with 2.0.7 and 2.1 NRK)
+ - CasparCG Client to load the templates (tested with 2.0.7 and 2.0.8)
 
 ## Install Control
 - Inside the graphics-control folder:
